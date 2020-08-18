@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>guru.spingframework</groupId>
-    <artifactId>sping5-recipe-app</artifactId>
+    <artifactId>spring5-recipe-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sping5-recipe-app</name>
-    <description>Recipe Application</description>
+    <name>spring5-recipe-app</name>
+    <description>Recipe App</description>
 
     <properties>
         <java.version>11</java.version>

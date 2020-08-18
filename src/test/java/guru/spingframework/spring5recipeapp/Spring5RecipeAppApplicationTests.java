@@ -1,10 +1,10 @@
-package guru.spingframework.sping5recipeapp;
+package guru.spingframework.spring5recipeapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Sping5RecipeAppApplicationTests {
+class Spring5RecipeAppApplicationTests {
 
     @Test
     void contextLoads() {
