@@ -26,4 +26,11 @@ public class RecipeServiceImpl implements RecipeService {
 
         return recipes;
     }
+
+    @Override
+    public Recipe findById(Long id){
+       return recipeRepository.findById(id).orElseThrow(RuntimeException::new);
+    }
+
+
 }

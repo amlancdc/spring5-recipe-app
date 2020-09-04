@@ -195,6 +195,10 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         guacamoleRecipe.getCategories().add(americanCategory);
         guacamoleRecipe.getCategories().add(mexicanCategory);
 
+        guacamoleRecipe.setSource("www.google.com");
+        guacamoleRecipe.setUrl("www.google.com");
+        guacamoleRecipe.setServings(4);
+
         recipes.add(guacamoleRecipe);
 
         Recipe tacosRecipe = new Recipe();
@@ -245,7 +249,9 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         tacosRecipe.addIngredient(new Ingredient("1/2 cup sour cream thinned with 1/4 cup milk", new BigDecimal(1/4) , cupUom));
         tacosRecipe.addIngredient(new Ingredient("1 lime, cut into wedges", new BigDecimal(1) , eachUom));
 
-        tacosRecipe.getCategories().add(mexicanCategory);
+        tacosRecipe.setSource("www.google.com");
+        tacosRecipe.setUrl("www.google.com");
+        tacosRecipe.setServings(4);
 
         recipes.add(tacosRecipe);
 
