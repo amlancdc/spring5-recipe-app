@@ -1,6 +1,7 @@
 package guru.spingframework.spring5recipeapp.domain;
 
-import lombok.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -22,6 +23,4 @@ public class Category {
     public Category(){
 
     }
-
-
 }
