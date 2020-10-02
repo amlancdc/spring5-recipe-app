@@ -2,16 +2,15 @@ package guru.spingframework.spring5recipeapp.controllers;
 
 import guru.spingframework.spring5recipeapp.commands.RecipeCommand;
 import guru.spingframework.spring5recipeapp.services.RecipeService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 
+@Slf4j
 @Controller
 public class RecipeController {
-    private static final Logger log = LoggerFactory.getLogger(RecipeController.class);
     private final RecipeService recipeService;
 
     public RecipeController(RecipeService recipeService) {
