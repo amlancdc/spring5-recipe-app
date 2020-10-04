@@ -1,6 +1,7 @@
 package guru.spingframework.spring5recipeapp.domain;
 
-import lombok.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -33,6 +34,12 @@ public class Ingredient {
 
     public Ingredient(String description) {
         this.description = description;
+    }
+
+    public Long getRecipeId(){
+        if(recipe != null)
+            return recipe.getId();
+        return null;
     }
 
 }
